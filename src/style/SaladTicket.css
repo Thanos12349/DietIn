@@ -1,0 +1,10 @@
+.ourPlan {
+    font-size: 6vh;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.meal-plan-card{
+    background-color: rgb(4, 76, 26);
+    border-radius: 0 0 0 20%;
+}

@@ -1,0 +1,317 @@
+/* body {
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(rgba(67, 69, 67, 0.7), rgba(23, 25, 23, 0.7)),
+              url('/images/14.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.process .card,
+.freebies .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.process .card:hover,
+.freebies .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact a {
+  text-decoration: underline;
+}
+.btn1{
+  background-color: #079d0f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn1:hover{
+  background-color: #067a0c;
+} */
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* A more modern, clean font */
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Stronger heading font */
+  font-weight: 700; /* Bold headings */
+  color: #2c3e50; /* Darker heading color */
+}
+
+h1 {
+  font-size: 3.5rem; /* Larger hero title */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+h2::after { /* Underline effect for H2 */
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #079d0f;
+  border-radius: 2px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Section Padding */
+section {
+  padding: 80px 0; /* Consistent vertical spacing */
+  transition: background-color 0.4s ease-in-out; /* Smooth background transitions */
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh; /* Taller hero section */
+  background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 73, 94, 0.7)), /* Darker overlay for text contrast */
+              url('/images/14.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #f8f9fa; /* Lighter text for contrast */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.hero h1 {
+  animation: fadeInDown 1s ease-out; /* Fade in from top */
+}
+
+.hero .lead {
+  animation: fadeInUp 1.2s ease-out; /* Fade in from bottom */
+}
+
+.hero .btn1 {
+  animation: zoomIn 1.5s ease-out; /* Zoom in effect */
+}
+
+/* Custom Button Styles */
+.btn1 {
+  background-color: #079d0f;
+  color: white;
+  border: none;
+  border-radius: 30px; /* More rounded button */
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(7, 157, 15, 0.3); /* Green shadow */
+}
+
+.btn1:hover {
+  background-color: #067a0c;
+  transform: translateY(-5px) scale(1.02); /* Lift and slightly enlarge */
+  box-shadow: 0 8px 18px rgba(7, 157, 15, 0.5); /* More prominent shadow */
+}
+
+/* We Deal With Section */
+.we-deal-with {
+  background-color: #f4f7f6; /* Light background */
+}
+
+.we-deal-with ul {
+  padding-left: 0;
+  list-style: none; /* Remove default bullets */
+}
+
+.we-deal-with li {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+  display: flex; /* For icon alignment */
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.we-deal-with li:hover {
+  color: #079d0f; /* Highlight on hover */
+  transform: translateX(10px); /* Slide effect */
+}
+
+.we-deal-with .fa-check-circle {
+  color: #079d0f; /* Green checkmark */
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+/* Our Team Section */
+.our-team {
+  background-color: #e8f5e9; /* Light green background */
+  padding: 60px 0;
+}
+
+.our-team p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Why Choose Us Section */
+.why-choose-us .list-group-item {
+  background-color: transparent;
+  border: none;
+  padding: 15px 0;
+  display: flex;
+  align-items: flex-start; /* Align text and icon at the start */
+  font-size: 1.15rem;
+  color: #555;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.why-choose-us .list-group-item:hover {
+  background-color: #f0fdf0 !important; /* Lighter green hover */
+  transform: translateX(15px);
+  color: #079d0f;
+}
+
+.why-choose-us .fa-check-circle {
+  color: #079d0f;
+  margin-right: 20px;
+  font-size: 1.8rem; /* Larger icons */
+  min-width: 30px; /* Ensure icon doesn't shrink */
+}
+
+/* Programs Section */
+.programs {
+  background-color: #f4f7f6;
+}
+
+.programs .card {
+  border: 1px solid #dcdcdc;
+  border-radius: 15px; /* More rounded cards */
+  overflow: hidden; /* For shadow effect */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08); /* Initial subtle shadow */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth cubic-bezier transition */
+  padding: 30px;
+  background-color: #fff;
+}
+
+.programs .card:hover {
+  transform: translateY(-15px) scale(1.03); /* Lift higher and slightly enlarge */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* More prominent shadow on hover */
+}
+
+.programs .card h5 {
+  color: #079d0f; /* Green title for programs */
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.programs .card p {
+  color: #777;
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 73, 94, 0.85)),
+              url('/images/contact-bg.jpg') center/cover no-repeat fixed; /* New background image and fixed effect */
+  color: #f8f9fa;
+  padding: 100px 0; /* More vertical space */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.contact h2::after { /* White underline for dark background */
+  background-color: #f8f9fa;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  color: #aed581 !important; /* Lighter green for links */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact a:hover {
+  color: #e0f2f7 !important; /* Lighter color on hover */
+  text-decoration: underline;
+}
+
+.contact .btn1.btn-outline-light {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+  background-color: transparent;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .btn1.btn-outline-light:hover {
+  background-color: #079d0f;
+  color: white;
+  border-color: #079d0f;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(7, 157, 15, 0.4);
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* You'll also need to link Google Fonts in your `index.html` or `public/index.html` for 'Poppins' and 'Montserrat' */
+/* Add this to your <head> section: */
+/* <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> */

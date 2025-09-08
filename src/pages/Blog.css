@@ -1,0 +1,118 @@
+.blog-page {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  background: #fff;
+}
+
+.blog-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.color-green{
+  color: #063f00;
+}
+
+.blog-card .card-img-top {
+  width: 100%;           
+  height: 250px;         
+  object-fit: cover;     
+  display: block;}
+
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #0d3c78;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.card-title:hover {
+  color: #ff6600;
+}
+.btn2{
+    margin: 5px;
+    border-radius: 0 25% 0 25%;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn2:hover {
+    background-color: #063f00;
+    color: #fff;
+}
+
+.blog-nutrition {
+  margin-top: 10px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f0f3f1,#53b448, #013510);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: transform .8s ease-in-out;
+}
+
+.blog-nutrition:hover {
+  transform: translateY(-5px) scale(1.24);
+}
+
+.blog-nutrition h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2b7a3d;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #f7faf8;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.blog-nutrition ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.blog-nutrition ul li {
+  font-size: 0.95rem;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  color: #5c3400;
+  font-weight: 500;
+  position: relative;
+  padding-left: 28px;
+}
+
+.blog-nutrition ul li::before {
+  content: "🥦"; 
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+}
+
+.blog-nutrition ul li:nth-child(1)::before {
+  content: "🔥"; 
+}
+.blog-nutrition ul li:nth-child(2)::before {
+  content: "💪"; 
+}
+.blog-nutrition ul li:nth-child(3)::before {
+  content: "🍞"; 
+}
+.blog-nutrition ul li:nth-child(4)::before {
+  content: "🥓"; 
+}
+.blog-nutrition ul li:nth-child(5)::before {
+  content: "🌿";
+}
